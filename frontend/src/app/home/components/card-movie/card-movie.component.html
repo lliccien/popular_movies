@@ -1,0 +1,10 @@
+<ion-card>
+  <img src='{{"https://image.tmdb.org/t/p/original/" +movie.poster_path}}' />
+  <ion-card-header>
+    <ion-card-subtitle> Average: {{ movie.vote_average}}</ion-card-subtitle>
+    <ion-card-title>{{ movie.title }}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    {{ movie.overview | slice:0:150}}...
+  </ion-card-content>
+</ion-card>

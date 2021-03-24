@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Test MyBarber - Popularity Movies </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-row>
+    <ion-col *ngFor="let movie of popularityMovies" >
+      <div>
+        <app-card-movie [movie]="movie"></app-card-movie>
+      </div>
+    </ion-col>
+  </ion-row>
+
+
+</ion-content>
